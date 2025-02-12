@@ -1,0 +1,17 @@
+{
+  "dashboard": {
+    "title": "CI/CD & Kubernetes Monitoring",
+    "panels": [
+      {
+        "type": "graph",
+        "title": "CI/CD Build Failures",
+        "targets": [
+          {
+            "expr": "rate(ci_cd_builds_failed[5m])",
+            "legendFormat": "Failed Builds"
+          }
+        ]
+      }
+    ]
+  }
+}

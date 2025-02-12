@@ -1,50 +1,32 @@
-# AI-Driven-CI-CD-Automation
-🔹 Project Name: DevOpsCopilot – AI-Driven CI/CD Automation
-🔹 Tech Stack: Kubernetes, Docker, Terraform, Ansible, Jenkins/GitHub Actions, Prometheus, Grafana, ELK Stack, AWS/GCP, Python (for AI), OpenAI API
-🔹 Concept:
-Build a self-healing, intelligent CI/CD pipeline that can:
-✅ Auto-detect build failures using AI & suggest fixes
-✅ Perform security scans (SAST, DAST) & block vulnerabilities
-✅ Optimize infrastructure using Terraform & Ansible
-✅ Auto-remediate incidents (e.g., restart failed pods in Kubernetes)
-✅ Provide a chatbot assistant for pipeline monitoring via Slack/Discord
+# DevOps AI-Powered Auto-Remediation & Monitoring
 
+## 🚀 Overview
+This project is a complete **AI-powered DevOps automation system** that includes CI/CD, auto-remediation, security scanning, and monitoring. It leverages **GitHub Actions, Kubernetes, Terraform, OpenAI, and Prometheus/Grafana**.
 
-🔹 Project: DevOpsCopilot – AI-Driven CI/CD Automation
-🛠️ Tech Stack & Tools
-Category	Tools & Technologies
-Version Control	Git, GitHub/GitLab, GitHub Actions, Jenkins
-Containerization	Docker, Kubernetes (EKS/GKE/AKS)
-Infrastructure	Terraform, Ansible, AWS/GCP
-Monitoring	Prometheus, Grafana, ELK Stack
-Security	SonarQube, Trivy, OWASP ZAP, HashiCorp Vault
-AI Automation	Python, OpenAI API, LangChain
-ChatOps	Slack/Discord Bot using Webhooks
-Logging	Loki, Fluentd, ELK (Elasticsearch, Logstash, Kibana)
+## 📂 Features
+✅ **AI-Based Auto-Remediation for Failed Deployments**  
+✅ **GitHub Actions CI/CD Pipeline**  
+✅ **Auto-Rollback on Deployment Failure**  
+✅ **Kubernetes Monitoring with Grafana & Prometheus**  
+✅ **Security Scanning with Trivy**  
+✅ **Slack Notifications for Failures**
 
-📌 Key Features
-🔥 1. Intelligent CI/CD Pipeline
-✅ Automated Build, Test, and Deployment using GitHub Actions/Jenkins
-✅ Code Quality & Security Scans with SonarQube, Trivy (Container Security), OWASP ZAP (DAST)
-✅ AI-Based Build Failure Analysis: If a build fails, AI suggests fixes
-✅ Auto-Rollback on Failure: If deployment fails, automatically rollback
+## 📌 Setup Instructions
+1. Clone this repository:  
+   ```bash
+   git clone https://github.com/whiskyCavalier/DevOps-AI-Auto-Remediation.git
+   cd DevOps-AI-Auto-Remediation
+   ```
+2. Deploy monitoring stack:
+   ```bash
+   kubectl create namespace monitoring
+   helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+   helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring
+   ```
+3. Set up GitHub Actions and deploy your infrastructure.
 
-🔥 2. Auto-Remediation & Self-Healing
-✅ Monitor Kubernetes Pods & Services using Prometheus & Grafana
-✅ AI-Powered Incident Detection (Detect anomalies in logs & metrics)
-✅ Automated Healing Actions (Restart failed pods, increase resources dynamically)
-✅ Terraform for Automated Cloud Resource Scaling
-
-🔥 3. DevSecOps – Security at Every Stage
-✅ Static Code Analysis (SAST) with SonarQube
-✅ Container Security Scan using Trivy
-✅ Runtime Security (DAST) with OWASP ZAP
-✅ Secrets Management with HashiCorp Vault
-
-🔥 4. ChatOps – Slack/Discord Bot
-✅ Real-time CI/CD Notifications to Slack/Discord
-✅ Get Build & Deployment Status via Chat
-✅ Trigger Deployments with Chat Commands
-✅ AI Chatbot for Debugging Build/Deployment Issues
-
-![DALL·E 2025-02-12 16 10 41 - A high-level architecture diagram for an AI-powered DevOps workflow  The diagram should be clean, professional, and visually structured to show the en](https://github.com/user-attachments/assets/788be658-b60c-48bf-8ac1-c6c204bbea88)
+## 🎯 Next Steps
+✅ Deploy the solution on AWS/GCP  
+✅ Record a demo video for recruiters  
+✅ Share the GitHub repo with hiring managers  
+    
