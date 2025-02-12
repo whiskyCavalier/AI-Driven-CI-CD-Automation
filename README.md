@@ -46,3 +46,4 @@ Logging	Loki, Fluentd, ELK (Elasticsearch, Logstash, Kibana)
 ✅ Get Build & Deployment Status via Chat
 ✅ Trigger Deployments with Chat Commands
 ✅ AI Chatbot for Debugging Build/Deployment Issues
+![Uploading DALL·E 2025-02-12 16.10.41 - A high-level architecture diagram for an AI-powered DevOps workflow. The diagram should be clean, professional, and visually structured to show the en.jpg…]()
